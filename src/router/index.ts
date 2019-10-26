@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import DisplayOneCard from '../views/DisplayOneCard.vue'
+import DisplayCards from '../views/DisplayCards.vue'
 import BulmaTestPage from '../views/BulmaTestPage.vue'
 
 Vue.use(VueRouter);
@@ -21,7 +21,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
-    path: '/displayonecard', name: 'displayonecard', component: DisplayOneCard
+    path: '/displaycards', name: 'displaycards', component: DisplayCards
   },
   {
     path: '/bulmatestpage', name: 'bulmatestpage', component: BulmaTestPage

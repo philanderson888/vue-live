@@ -2,7 +2,7 @@
   <div>
     <section class="section">
       <div class="container">
-        <h1 class="title">This displays one card</h1>
+        <h1 class="title">This displays playing cards!</h1>
         <p>
           <strong>Well here goes with displaying one card!!!</strong>
           I'm following this tutorial
@@ -169,9 +169,6 @@ body,
   padding-top: 30px;
 }
 
-.deck {
-  margin-left: 40px;
-}
 
 .card {
   width: 75px;

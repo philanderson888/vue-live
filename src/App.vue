@@ -24,7 +24,7 @@
           <router-link class="navbar-item" to="/">Home</router-link>
           <router-link class="navbar-item" to="/about">About</router-link>
           <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
-          <router-link class="navbar-item" to="/displayonecard">Display One Card</router-link>
+          <router-link class="navbar-item" to="/displaycards">Display Playing Cards</router-link>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>
 
