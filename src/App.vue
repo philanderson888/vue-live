@@ -23,6 +23,7 @@
         <div class="navbar-start">
           <router-link class="navbar-item" to="/">Home</router-link>
           <router-link class="navbar-item" to="/about">About</router-link>
+          <a href="https://epic-hamilton-f35937.netlify.com/displaycards" class="navbar-item">Blog</a>
           <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
           <router-link class="navbar-item" to="/displaycards">Display Playing Cards</router-link>
           <div class="navbar-item has-dropdown is-hoverable">
