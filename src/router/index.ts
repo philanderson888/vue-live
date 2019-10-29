@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import DisplayCards from '../views/DisplayCards.vue'
 import BulmaTestPage from '../views/BulmaTestPage.vue'
+import ShuffleCards from '../views/ShuffleCards.vue'
 
 Vue.use(VueRouter);
 
@@ -25,6 +26,9 @@ const routes = [
   },
   {
     path: '/bulmatestpage', name: 'bulmatestpage', component: BulmaTestPage
+  },
+  {
+    path:'/shufflecards',name:'shufflecards',component:ShuffleCards
   },
 ];
 

@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <a class="navbar-item" href="/">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
         </a>
 
@@ -79,5 +79,13 @@ export default class App extends Vue {}
 }
 #coffeeMug {
   width: 30vw;
+}
+.first-paragraph-upper-margin{
+  margin-top: 5vh;
+  font-size:1.5em;
+  font-weight: 300;
+}
+.slightly-strong{
+  font-weight: 500;
 }
 </style>

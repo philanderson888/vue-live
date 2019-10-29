@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div><!-- page -->
+    <!-- #region Header -->
     <section class="section">
       <div class="container">
-        <h1 class="title header-lower-margin">This displays playing cards!</h1>
-        <p>
-          <strong>Well here goes with displaying one card!!!</strong>
+        <h1 class="title">This displays playing cards!</h1>
+        <p class="first-paragraph-upper-margin">
+          <span class="slightly-strong">Well here goes with displaying one card!!!</span>
           I'm following this tutorial
           <a
             href="https://medium.com/fullstackio/tutorial-shuffle-a-deck-of-cards-in-vue-js-b65da4c59b1"
@@ -12,6 +13,9 @@
         </p>
       </div>
     </section>
+    <!-- #endregion -->
+
+    <!-- #region Display One Unstyled Card -->
     <section class="page-break top-page">
       <div class="container">
         <p class="subtitle">Here is a card! Not styled yet!</p>
@@ -24,6 +28,9 @@
         </div>
       </div>
     </section>
+    <!-- #endregion -->
+
+    <!-- #region Display One Styled Card -->
     <section class="page-break">
       <div class="container">
         <p class="subtitle">Here is a card! Styled!</p>
@@ -36,7 +43,9 @@
         </div>
       </div>
     </section>
+    <!-- #endregion -->
 
+    <!-- #region Display One Clickable Card -->
     <section class="page-break">
       <div class="container">
         <p class="subtitle">Here is a card! As a clickable item!</p>
@@ -51,23 +60,32 @@
         </a>
       </div>
     </section>
+    <!-- #endregion -->
+    
+    <!-- #region Display All Cards -->
     <section class="page-break">
-      <p class="subtitle">Displaying all cards</p>
-      <div class="deck">
-        <div
-          v-for="card in cards"
-          :key="card.id"
-          class="card"
-          :class="{ 'black': card.suit === '♠' || card.suit ===  '♣',
-                          'red': card.suit === '♥' || card.suit ===  '♦' }"
-        >
-          <span class="card__suit card__suit--top">{{ card.suit }}</span>
-          <span class="card__number">{{ card.rank }}</span>
-          <span class="card__suit card__suit--bottom">{{ card.suit }}</span>
-        </div>
-      </div>
-  </div>
+      <div class="container">
+        <p class="subtitle">Displaying all cards</p>
+        <div class="deck">
+          <div
+            v-for="card in cards"
+            :key="card.id"
+            class="card"
+            :class="{ 'black': card.suit === '♠' || card.suit ===  '♣',
+                            'red': card.suit === '♥' || card.suit ===  '♦' }"
+          >
+            <span class="card__suit card__suit--top">{{ card.suit }}</span>
+            <span class="card__number">{{ card.rank }}</span>
+            <span class="card__suit card__suit--bottom">{{ card.suit }}</span>
+          </div>
+        </div><!-- deck -->
+      </div><!-- container -->
+    </section>
+    <!-- #endregion -->
+  
+  </div><!-- page -->
 </template>
+
 
 <script>
 export default {
@@ -103,7 +121,10 @@ export default {
 </script>
 
 
+<!-- #region CSS -->
 
+
+</style>
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
 
@@ -149,10 +170,6 @@ body,
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-.header-lower-margin{
-  margin-bottom: 5vh;
 }
 
 .page-break {
@@ -258,3 +275,5 @@ body,
   }
 }
 </style>
+
+<!-- #endregion -->

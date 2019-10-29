@@ -1,15 +1,50 @@
 <template>
     <div>
+        <!-- #region header -->
         <section class="section">
             <div class="container">
                 <h1 class="title">Shuffle Cards</h1>
-                <p class="subtitle">This page shows how to display a shuffled pack of playing cards</p>
+                <p class="first-paragraph-upper-margin">This page shows how to display a shuffled pack of playing cards</p>
             </div>
         </section>
-        Shuffle cards
-    </div>
+        <!-- #endregion -->
+
+        <!-- #region Display All Cards -->
+        <section>
+            <div class="container">
+                <p class="subtitle">Displaying all cards</p>
+                <p class="subtitle">Now let's see if we can shuffle a pack of cards!!!</p>
+            </div>
+            <div class="container">
+                <div class="button-container">
+                    <button @click="shuffleDeck2" class="button is-light toggle-shuffle">Shuffle</button>
+                    <button @click="displayInitialDeck" class="button is-light toggle-shuffle">UnShuffle</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="deck">
+                <div
+                    v-for="card in cards"
+                    :key="card.id"
+                    class="card"
+                    :class="{ 'black': card.suit === '♠' || card.suit ===  '♣',
+                                    'red': card.suit === '♥' || card.suit ===  '♦' }"
+                >
+                    <span class="card__suit card__suit--top">{{ card.suit }}</span>
+                    <span class="card__number">{{ card.rank }}</span>
+                    <span class="card__suit card__suit--bottom">{{ card.suit }}</span>
+                </div>
+                </div><!-- deck -->
+            </div><!-- container -->
+        </section>
+        <!-- #endregion -->
+     </div>
 </template>
 
+
+
+
+<!-- #region scripts -->
 <script>
 export default {
     name:"shufflecards",
@@ -42,23 +77,34 @@ export default {
         },
         shuffleDeck(){
             for(let i=this.cards.length-1;i>0;i--){
-                let randomIndex=Math.floor(Math.random()*i)
-                let temp=this.cards[i]
-                this.cards[i]=this.cards[randomIndex]
-                this.cards[randomIndex] = temp
+                let randomIndex=Math.floor(Math.random()*i);
+                let temp=this.cards[i];
+                this.cards[i]=this.cards[randomIndex];
+                this.cards[randomIndex] = temp;
+         //      Vue.set(this.cards,i,this.cards[randomIndex]);
+          //     Vue.set(this.cards,randomIndex,temp);
+            }
+        },
+        shuffleDeck2(){
+            alert('shuffle deck 2');
+            for(let i=this.cards.length-1;i>0;i--){
+                let randomIndex=Math.floor(Math.random()*i);
+                let temp=this.cards[i];
+           //     this.cards[i]=this.cards[randomIndex];
+          //      this.cards[randomIndex] = temp;
+                Vue.set(this.cards,i,this.cards[randomIndex]);
+               Vue.set(this.cards,randomIndex,temp);
             }
         },
     }
 }
 </script>
 
+<!-- #endregion -->
 
 
 
-
-
-
-
+<!--#region CSS -->
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
@@ -101,6 +147,14 @@ body,
   margin-bottom: 0 !important;
 }
 
+.toggle-shuffle{
+    margin:3vh 5vw  2vh;
+}
+
+
+.button-container{
+    margin-left:5vw;
+}
 .count-section {
   position: absolute;
   top: 10px;
@@ -210,3 +264,5 @@ body,
   }
 }
 </style>
+
+<!-- #endregion -->
