@@ -2,7 +2,7 @@
   <div>
     <section class="section">
       <div class="container">
-        <h1 class="title">This displays playing cards!</h1>
+        <h1 class="title header-lower-margin">This displays playing cards!</h1>
         <p>
           <strong>Well here goes with displaying one card!!!</strong>
           I'm following this tutorial
@@ -66,7 +66,6 @@
           <span class="card__suit card__suit--bottom">{{ card.suit }}</span>
         </div>
       </div>
-    </section>
   </div>
 </template>
 
@@ -150,6 +149,10 @@ body,
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.header-lower-margin{
+  margin-bottom: 5vh;
 }
 
 .page-break {

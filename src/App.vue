@@ -24,12 +24,12 @@
           <router-link class="navbar-item" to="/">Home</router-link>
           <router-link class="navbar-item" to="/about">About</router-link>
           <a href="https://philanderson.uk" class="navbar-item">Blog</a>
-          <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
-          <router-link class="navbar-item" to="/displaycards">Display Playing Cards</router-link>
+          <router-link class="navbar-item" to="/displaycards">Display Cards</router-link>
+          <router-link class="navbar-item" to="/shufflecards">Shuffle Cards</router-link>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>
-
             <div class="navbar-dropdown">
+              <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
               <a class="navbar-item">About</a>
               <a class="navbar-item">Jobs</a>
               <a class="navbar-item">Contact</a>
