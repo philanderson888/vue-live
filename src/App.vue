@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- #region navbar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
@@ -27,12 +28,16 @@
           <router-link class="navbar-item" to="/displaycards">Display Cards</router-link>
           <router-link class="navbar-item" to="/shufflecards">Shuffle Cards</router-link>
           <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Teaching Materials</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://github.com/philanderson888/course-notes/tree/master/glossaries">Glossaries</a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">More</a>
             <div class="navbar-dropdown">
               <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
               <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
-              <a class="navbar-item">Contact</a>
               <hr class="navbar-divider" />
               <a class="navbar-item">Report an issue</a>
             </div>
@@ -51,11 +56,14 @@
         </div>
       </div>
     </nav>
+    <!-- #endregion navbar -->
+
     <router-view />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
 
+<!-- #region typscript -->
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
@@ -67,7 +75,9 @@ import HelloWorld from "./components/HelloWorld.vue";
 })
 export default class App extends Vue {}
 </script>
+<!-- #endregion typescript -->
 
+<!-- #region global css -->
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -89,3 +99,5 @@ export default class App extends Vue {}
   font-weight: 500;
 }
 </style>
+
+<!-- #endregion -->
