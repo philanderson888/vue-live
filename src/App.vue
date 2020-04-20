@@ -30,7 +30,7 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Teaching Materials</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="https://github.com/philanderson888/course-notes/tree/master/glossaries">Glossaries</a>
+              <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
