@@ -37,9 +37,7 @@
             <a class="navbar-link">More</a>
             <div class="navbar-dropdown">
               <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
-              <a class="navbar-item">About</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item">Report an issue</a>
             </div>
           </div>
         </div>
