@@ -31,6 +31,8 @@
             <a class="navbar-link">Teaching Materials</a>
             <div class="navbar-dropdown">
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
+              <hr class="navbar-divider" />
+              <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -48,7 +50,7 @@
               <a class="button is-primary">
                 <strong>Sign up</strong>
               </a>
-              <a class="button is-light">Log in</a>
+              <a class = "button is-light">Log in</a>
             </div>
           </div>
         </div>
@@ -57,7 +59,7 @@
     <!-- #endregion navbar -->
 
     <router-view />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HelloWorld msg = "Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
 
@@ -66,10 +68,10 @@
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
 
-@Component({
+@Component ({
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
 })
 export default class App extends Vue {}
 </script>
@@ -88,12 +90,12 @@ export default class App extends Vue {}
 #coffeeMug {
   width: 30vw;
 }
-.first-paragraph-upper-margin{
+.first-paragraph-upper-margin {
   margin-top: 5vh;
   font-size:1.5em;
   font-weight: 300;
 }
-.slightly-strong{
+.slightly-strong {
   font-weight: 500;
 }
 </style>

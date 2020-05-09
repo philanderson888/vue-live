@@ -48,12 +48,12 @@
 <script>
 import Vue from 'vue';
 export default {
-    name:"shufflecards",
-    data:function(){
+    name: "shufflecards",
+    data: function(){
         return{
-            ranks: ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"],
-            suits: ["♥", "♦", "♠", "♣"],
-            cards: []
+            ranks: ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'],
+            suits: ['♥', '♦', '♠', '♣'],
+            cards: [],
         }
     },
     created(){
@@ -65,28 +65,26 @@ export default {
             this.cards = [];
             for (let s = 0; s < this.suits.length; s++) {
                 for (let r = 0; r < this.ranks.length; r++) {
-                let card = {
-                    id: id,
+                const card = {
+                    id,
                     rank: this.ranks[r],
-                    suit: this.suits[s]
+                    suit: this.suits[s],
                 };
                 this.cards.push(card);
                 id++;
                 }
             }
         },
-        shuffleDeck(){
-            for(let i=this.cards.length-1;i>0;i--){
-                let randomIndex=Math.floor(Math.random()*i);
-                let temp=this.cards[i];
-          //    this.cards[i]=this.cards[randomIndex];
-          //    this.cards[randomIndex] = temp;
-                Vue.set(this.cards,i,this.cards[randomIndex]);
-                Vue.set(this.cards,randomIndex,temp);
+        shuffleDeck() {
+            for (let i = this.cards.length - 1 ; i > 0 ; i--) {
+                const randomIndex = Math.floor (Math.random() * i);
+                const temp = this.cards[i];
+                Vue.set (this.cards, i, this.cards[randomIndex]);
+                Vue.set (this.cards, randomIndex, temp);
             }
         },
-    }
-}
+    },
+};
 </script>
 
 <!-- #endregion -->
