@@ -30,9 +30,6 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Teaching Materials</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
-              <hr class="navbar-divider" />
-              <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app">HTML Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionCSS">CSS Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionJavascript">Javascript Learning</a>
@@ -44,6 +41,9 @@
               <a class="navbar-item" href="https://mevn-login-api.netlify.app">MEVN Mongo Back End API with NodeJS</a>    
               <a class="navbar-item" href="https://nervous-pare-b73c83.netlify.app/blog">Testimony App (built in NuxtJS)</a>
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
+              <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
 
 
               
