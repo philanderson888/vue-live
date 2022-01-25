@@ -33,6 +33,7 @@
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <hr class="navbar-divider" />
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
+              <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app">HTML Learning</a>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
