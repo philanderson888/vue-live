@@ -37,7 +37,7 @@
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionSVG">SVG Learning</a>
               <a class="navbar-item" href="https://htmlpreview.github.io/?https://github.com/philanderson888/bootstrap/blob/master/bootstrap_01.htm">Bootstrap Learning</a>
               <a class="navbar-item" href="https://mevn-students-app.netlify.app">Mongo Students App</a>
-              <a class="navbar-item" href="https://mevn-login-app.netlify.app">MEVN Full Stack App with Mongo Database, Full User Registration And Login with full CRUD Todo List</a>    
+              <a class="navbar-item" href="https://mevn-login-app.netlify.app">MEVN Full Stack App with Mongo Database, JWT User Registration And Login with full CRUD Todo List</a>    
               <a class="navbar-item" href="https://mevn-login-api.netlify.app">MEVN Mongo Back End API with NodeJS</a>    
               <a class="navbar-item" href="https://nervous-pare-b73c83.netlify.app/blog">Testimony App (built in NuxtJS)</a>
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
