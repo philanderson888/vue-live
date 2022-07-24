@@ -42,12 +42,11 @@
               <a class="navbar-item" href="https://nervous-pare-b73c83.netlify.app/blog">Testimony App (built in NuxtJS)</a>
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
               <hr class="navbar-divider" />
+              <a class="navbar-item">Node</a>
+              <a class="navbar-item" href="https://strong-lebkuchen-5f4a43.netlify.app">Tailwind CSS</a>
+              <hr class="navbar-divider" />
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
-
-
-              
-
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
