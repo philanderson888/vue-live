@@ -51,6 +51,9 @@
               <a class="navbar-item">Contentful Blog Site</a>
               <a class="navbar-item" href="https://philanderson.uk">PhilAnderson.uk Contentful Static Site (need to fix build)</a>
               <hr class="navbar-divider" />
+              <a class="navbar-item">Deno</a>
+              <a class="navbar-item" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
+              <hr class="navbar-divider" />
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
