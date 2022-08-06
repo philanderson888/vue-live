@@ -54,6 +54,9 @@
               <a class="navbar-item">Deno</a>
               <a class="navbar-item" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
               <hr class="navbar-divider" />
+              <a class="navbar-item">Svelte</a>
+              <a class="navbar-item" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
+              <hr class="navbar-divider" />
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
