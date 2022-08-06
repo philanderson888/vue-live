@@ -44,17 +44,17 @@
               <hr class="navbar-divider" />
               <a class="navbar-item" href="https://epic-hamilton-f35937.netlify.app/">VueJS with Bulma CSS (This site)</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item">Node</a>
+              <a class="navbar-item navbar-bold">Node</a>
               <a class="navbar-item" href="https://strong-lebkuchen-5f4a43.netlify.app">Tailwind CSS</a>
               <hr class="navbar-divider" />
               <a class="navbar-item" href="https://philanderson.uk">PhilAnderson.uk Contentful Static Site (need to fix build)</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item">Demo Sites</a>
-              <a class="navbar-link" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
-              <a class="navbar-link" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
+              <a class="navbar-item navbar-bold">Demo Sites</a>
+              <a class="navbar-item" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
+              <a class="navbar-item" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
               <hr class="navbar-divider" />
-              <a class="navbar-link" href="https://github.com/philanderson888/course-notes">Course Notes</a>
-              <router-link class="navbar-link" to="/vuetutorials">Vue Tutorials</router-link>
+              <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
+              <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -121,6 +121,10 @@ export default class App extends Vue {}
 }
 .slightly-strong {
   font-weight: 500;
+}
+
+.navbar-bold{
+  font-weight: bold;
 }
 </style>
 
