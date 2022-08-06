@@ -50,11 +50,11 @@
               <a class="navbar-item" href="https://philanderson.uk">PhilAnderson.uk Contentful Static Site (need to fix build)</a>
               <hr class="navbar-divider" />
               <a class="navbar-item">Demo Sites</a>
-              <a class="navbar-item" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
-              <a class="navbar-item" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
+              <a class="navbar-link" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
+              <a class="navbar-link" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
-              <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
+              <a class="navbar-link" href="https://github.com/philanderson888/course-notes">Course Notes</a>
+              <router-link class="navbar-link" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -100,6 +100,8 @@ export default class App extends Vue {}
 <!-- #endregion typescript -->
 
 <!-- #region global css -->
+
+
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -122,4 +124,6 @@ export default class App extends Vue {}
 }
 </style>
 
+
+.
 <!-- #endregion -->
