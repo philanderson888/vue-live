@@ -42,17 +42,18 @@
               <a class="navbar-item" href="https://nervous-pare-b73c83.netlify.app/blog">Testimony App (built in NuxtJS)</a>
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
               <hr class="navbar-divider" />
-              <a class="navbar-item" href="https://epic-hamilton-f35937.netlify.app/">VueJS with Bulma CSS (This site)</a>
-              <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Node</a>
+              <a class="navbar-item" href="https://epic-hamilton-f35937.netlify.app/">VueJS with Bulma CSS (This site)</a>
               <a class="navbar-item" href="https://strong-lebkuchen-5f4a43.netlify.app">Tailwind CSS</a>
               <hr class="navbar-divider" />
+              <a class="navbar-item navbar-bold">Static Site</a>
               <a class="navbar-item" href="https://philanderson.uk">PhilAnderson.uk Contentful Static Site (need to fix build)</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Demo Sites</a>
               <a class="navbar-item" href="https://philanderson888-deno.deno.dev">Deno Demo Site</a>
               <a class="navbar-item" href="https://svelte-hello-world-01.netlify.app/">Svelte Demo Site</a>
               <hr class="navbar-divider" />
+              <a class="navbar-item navbar-bold">GitHub</a>
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
