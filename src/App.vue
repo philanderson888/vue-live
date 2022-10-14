@@ -63,8 +63,8 @@
             <div class="navbar-dropdown">
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Serverless Functions</a>
-              <router-link class="navbar-item" to="https://github.com/philanderson888/netlify-express">Serverless Functions On Netlify - GitHub Code</router-link>
-              <router-link class="navbar-item" to="https://netlify-express-serverless.netlify.app/.netlify/functions/server">Serverless Functions On Netlify - Live Site</router-link>
+              <a class="navbar-item" href="https://github.com/philanderson888/netlify-express">Serverless Functions On Netlify - GitHub Code</a>
+              <a class="navbar-item" to="https://netlify-express-serverless.netlify.app/.netlify/functions/server">Serverless Functions On Netlify - Live Site</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Bulma CSS</a>
               <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
