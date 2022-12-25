@@ -1,4 +1,6 @@
-# vue-live
+# vue-live *** no longer updating ***
+
+*** this website is no longer updating because it's deployed on a version of Ubuntu no longer supported - so I have to find a way to transfer the whole website to a more modern version - might be good just to build the whole website from scratch and bin this one .... ???? do it as a point of learning !!! deploy a fresh vue site from scratch and build up a fresh site and switch it over at some point, then remove the old one ... that is best option .... ****
 
 A website built with VueJS and Bulma CSS
 
