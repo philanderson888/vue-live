@@ -1,6 +1,12 @@
 # vue-live *** no longer updating ***
 
-*** this website is no longer updating because it's deployed on a version of Ubuntu no longer supported - so I have to find a way to transfer the whole website to a more modern version - might be good just to build the whole website from scratch and bin this one .... ???? do it as a point of learning !!! deploy a fresh vue site from scratch and build up a fresh site and switch it over at some point, then remove the old one ... that is best option .... ****
+*** this website is no longer updating because it's deployed on a version of Ubuntu no longer supported - so I have to find a way to transfer the whole website to a more modern version - might be good just to build the whole website from scratch and bin this one .... ???? do it as a point of learning !!! deploy a fresh vue site from scratch and build up a fresh site and switch it over at some point, then remove the old one ... that is best option .... 
+
+track the updates in two places
+1. https://github.com/philanderson888/vue-live/issues/7
+2. https://github.com/philanderson888/course-notes/tree/master/web#main-websites---no-longer-working
+
+****
 
 A website built with VueJS and Bulma CSS
 
