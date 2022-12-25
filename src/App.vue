@@ -43,7 +43,7 @@
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Node</a>
-              <a class="navbar-item" href="https://epic-hamilton-f35937.netlify.app/">VueJS with Bulma CSS (This site)</a>
+              <a class="navbar-item" href="  <li className = {styles.navigationItem}><a href="https://vue-js-demo.netlify.app">VueJS with Bulma CSS</a></li>">VueJS with Bulma CSS (This site)</a>
               <a class="navbar-item" href="https://strong-lebkuchen-5f4a43.netlify.app">Tailwind CSS</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Static Site</a>
