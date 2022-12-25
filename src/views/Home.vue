@@ -2,7 +2,7 @@
   <div>
     <section class="section">
       <div class="container">
-        <h1 class="title">Phil Anderson's live VueJS Teaching App</h1>
+        <h1 class="title">Phil Anderson's live VueJS Teaching App ..</h1>
       </div>
       <img
         id="coffeeMug"
