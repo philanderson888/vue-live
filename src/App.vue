@@ -33,12 +33,7 @@ import { RouterLink, RouterView } from "vue-router";
           <RouterLink class="navbar-item navbar-bold" to="/about3">About</RouterLink>
           <RouterLink class="navbar-item navbar-bold" to="/viewtutorials">View Tutorials</RouterLink>
 
-          <a href="https://philanderson.uk" class="navbar-item navbar-bold">Blog</a>
-
-          <RouterLink class="navbar-item" to="/shufflecards">Shuffle Cards</RouterLink>
-
-          <router-link class="navbar-item" to="/displaycards">Display Cards</router-link>
-          
+          <a href="https://philanderson.uk" class="navbar-item navbar-bold">Blog</a>          
           
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Teaching Materials</a>
