@@ -1,6 +1,6 @@
-# vue-live
+# vue-project
 
-- [vue-live](#vue-live)
+- [vue-project](#vue-project)
   - [Recommended IDE Setup](#recommended-ide-setup)
   - [Type Support for `.vue` Imports in TS](#type-support-for-vue-imports-in-ts)
   - [Customize configuration](#customize-configuration)
@@ -11,8 +11,6 @@
     - [Run End-to-End Tests with Cypress](#run-end-to-end-tests-with-cypress)
     - [Lint with ESLint](#lint-with-eslint)
   - [version history](#version-history)
-  - [from old version of the site - to be amalgamated into the new version of the site ...](#from-old-version-of-the-site---to-be-amalgamated-into-the-new-version-of-the-site-)
-- [vue-live - work to update](#vue-live---work-to-update)
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -92,11 +90,3 @@ npm run lint
    - rename app
    - created first-version in archive\2022\12\first-version folder
 
-## from old version of the site - to be amalgamated into the new version of the site ...
-
-# vue-live - work to update
-
-work to update the old broken site to the new vue-vite site is tracked here
-
-1. https://github.com/philanderson888/vue-live/issues/7
-2. https://github.com/philanderson888/course-notes/tree/master/web#main-websites---no-longer-working

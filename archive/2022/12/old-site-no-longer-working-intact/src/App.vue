@@ -1,45 +1,32 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
-  <header>
-    
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-      </a>
-
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
+  <div>
+    <!-- #region navbar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
       <div id="navbarBasicExample" class="navbar-menu">
-
         <div class="navbar-start">
-
-          <RouterLink class="navbar-item navbar-bold" to="/">Home</RouterLink>
-          <RouterLink class="navbar-item navbar-bold" to="/about3">About</RouterLink>
-          <RouterLink class="navbar-item navbar-bold" to="/viewtutorials">View Tutorials</RouterLink>
-
-          <a href="https://philanderson.uk" class="navbar-item navbar-bold">Blog</a>
-
-          <RouterLink class="navbar-item" to="/shufflecards">Shuffle Cards</RouterLink>
-
+          <router-link class="navbar-item" to="/">Home</router-link>
+          <router-link class="navbar-item" to="/about">About</router-link>
+          <a href="https://philanderson.uk" class="navbar-item">Blog</a>
           <router-link class="navbar-item" to="/displaycards">Display Cards</router-link>
-          
-          
+          <router-link class="navbar-item" to="/shufflecards">Shuffle Cards</router-link>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Teaching Materials</a>
             <div class="navbar-dropdown">
@@ -56,7 +43,7 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Node</a>
-              <a class="navbar-item" href="  <li className = {styles.navigationItem}><a href='https://vue-js-demo.netlify.app'>VueJS with Bulma CSS</a></li>">VueJS with Bulma CSS (This site)</a>
+              <a class="navbar-item" href="  <li className = {styles.navigationItem}><a href="https://vue-js-demo.netlify.app">VueJS with Bulma CSS</a></li>">VueJS with Bulma CSS (This site)</a>
               <a class="navbar-item" href="https://strong-lebkuchen-5f4a43.netlify.app">Tailwind CSS</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Static Site</a>
@@ -87,10 +74,6 @@ import { RouterLink, RouterView } from "vue-router";
               <hr class="navbar-divider" />
             </div>
           </div>
-
-          <RouterLink class="navbar-item" to="/about2">About2</RouterLink>
-          <RouterLink class="navbar-item" to="/about">About</RouterLink>
-
         </div>
 
 
@@ -102,41 +85,37 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="button is-primary">
                 <strong>Sign up</strong>
               </a>
-              <a class="button is-light">Log in</a>
+              <a class = "button is-light">Log in</a>
             </div>
           </div>
         </div>
       </div>
-
     </nav>
+    <!-- #endregion navbar -->
 
-    
-  </header>
-
-  <RouterView />
+    <router-view />
+    <HelloWorld msg = "Welcome to Your Vue.js + TypeScript App" />
+  </div>
 </template>
 
+<!-- #region typscript -->
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import HelloWorld from "./components/HelloWorld.vue";
 
+@Component ({
+  components: {
+    HelloWorld,
+  },
+})
+export default class App extends Vue {}
+</script>
+<!-- #endregion typescript -->
+
+<!-- #region global css -->
 
 
 <style>
-
-#coffeeMug {
-  width: 10vw;
-}
-
-.slightly-strong {
-  font-weight: 500;
-}
-
-.navbar-bold{
-  font-weight: bold;
-}
-
-
-/* from my old app so some of this may be irrelevant or wrong! */
-
-/*
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -145,61 +124,23 @@ import { RouterLink, RouterView } from "vue-router";
   color: #2c3e50;
   margin-top: 60px;
 }
-
-
+#coffeeMug {
+  width: 30vw;
+}
 .first-paragraph-upper-margin {
   margin-top: 5vh;
   font-size:1.5em;
   font-weight: 300;
 }
+.slightly-strong {
+  font-weight: 500;
+}
 
-
-
-*/
-
+.navbar-bold{
+  font-weight: bold;
+}
 </style>
 
 
-
-
-
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-</style>
-
-
+.
+<!-- #endregion -->

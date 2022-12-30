@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import Home2View from "../views/Home2View.vue";
-import Home3View from "../views/Home3View.vue";
+import About3View from "../views/About3View.vue";
+import ViewTutorialsView from "../views/VueTutorialsView.vue";
+import ShuffleCards from "../views/ShuffleCards.vue";
+import DisplayCards from "../views/DisplayCards.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,14 +14,14 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/home2",
-      name: "home2",
-      component: Home2View,
+      path: "/about3",
+      name: "about3",
+      component: About3View,
     },
     {
-      path: "/home3",
-      name: "home3",
-      component: Home3View,
+      path: "/viewtutorials",
+      name: "viewtutorials",
+      component: ViewTutorialsView,
     },
     {
       path: "/about",
@@ -30,7 +32,16 @@ const router = createRouter({
       path: "/about2", 
       name: "about2", 
       component: () => import("../views/About2View.vue"),
-
+    },
+    {
+      path: "/shufflecards",
+      name: "shufflecards",
+      component: ShuffleCards,
+    },
+    {
+      path: "/displaycards",
+      name: "displaycards",
+      component: DisplayCards,
     },
   ],
 });

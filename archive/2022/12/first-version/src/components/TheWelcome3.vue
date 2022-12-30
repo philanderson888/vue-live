@@ -4,6 +4,7 @@ import WelcomeItem from "./WelcomeItem.vue";
 
 <template>
   <WelcomeItem>
-    <template #heading>Vue Tutorials</template>
+    <template #heading>Hey from Phil Welcome 3</template>
+    Hey from Phil Anderson Welcome 3
   </WelcomeItem>
 </template>
