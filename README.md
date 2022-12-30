@@ -1,6 +1,6 @@
-# vue-project
+# vue-live
 
-- [vue-project](#vue-project)
+- [vue-live](#vue-live)
   - [Recommended IDE Setup](#recommended-ide-setup)
   - [Type Support for `.vue` Imports in TS](#type-support-for-vue-imports-in-ts)
   - [Customize configuration](#customize-configuration)
