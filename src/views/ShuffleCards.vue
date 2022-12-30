@@ -22,8 +22,14 @@ import HelloWorld from "../components/HelloWorld.vue";
         </div>
         <div class="container">
             <div class="button-container">
-                <button @click="shuffleDeck" class="button is-light toggle-shuffle">Shuffle</button>
-                <button @click="displayInitialDeck" class="button is-light toggle-shuffle">UnShuffle</button>
+                <button class="button is-light toggle-shuffle">Shuffle</button>
+                <button class="button is-light toggle-shuffle">UnShuffle</button>
+
+                <!-- 
+                  <button @click="shuffleDeck" class="button is-light toggle-shuffle">Shuffle</button>
+                    <button @click="displayInitialDeck" class="button is-light toggle-shuffle">UnShuffle</button>
+                -->
+
             </div>
         </div>
         <div class="container">
