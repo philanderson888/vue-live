@@ -87,7 +87,8 @@
 </template>
 
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
 export default {
   name: "displayonecard",
   data: function() {
