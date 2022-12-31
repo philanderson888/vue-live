@@ -32,23 +32,35 @@ import { RouterLink, RouterView } from "vue-router";
           <RouterLink class="navbar-item navbar-bold" to="/">Home</RouterLink>
           <RouterLink class="navbar-item navbar-bold" to="/about3">About</RouterLink>
           <RouterLink class="navbar-item navbar-bold" to="/viewtutorials">View Tutorials</RouterLink>
-
-          <a href="https://philanderson.uk" class="navbar-item navbar-bold">Blog</a>          
+          <a class="navbar-item navbar-bold" href="https://philanderson.uk" >Blog</a>
+          <RouterLink class="navbar-item navbar-bold" to="/helloWorld">Basic Features</RouterLink>
           
+          <hr class="navbar-divider" />
+
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Teaching Materials</a>
             <div class="navbar-dropdown">
+              <a class="navbar-link navbar-item navbar-bold" href="https://gifted-haibt-065acd.netlify.app">Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app">HTML Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionCSS">CSS Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionJavascript">Javascript Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionCanvas">Canvas Learning</a>
               <a class="navbar-item" href="https://gifted-haibt-065acd.netlify.app/#sectionSVG">SVG Learning</a>
               <a class="navbar-item" href="https://htmlpreview.github.io/?https://github.com/philanderson888/bootstrap/blob/master/bootstrap_01.htm">Bootstrap Learning</a>
+
+              <hr class="navbar-divider" />
+              <a class="navbar-item navbar-bold" href="https://mevn-students-app.netlify.app">MEVN</a>
               <a class="navbar-item" href="https://mevn-students-app.netlify.app">Mongo Students App</a>
               <a class="navbar-item" href="https://mevn-login-app.netlify.app">MEVN Full Stack App with Mongo Database, JWT User Registration And Login with full CRUD Todo List</a>    
               <a class="navbar-item" href="https://mevn-login-api.netlify.app">MEVN Mongo Back End API with NodeJS</a>    
+
+              <hr class="navbar-divider" />
+              <a class="navbar-item navbar-bold" href="https://nervous-pare-b73c83.netlify.app/blog">Testimonies</a>
               <a class="navbar-item" href="https://nervous-pare-b73c83.netlify.app/blog">Testimony App (built in NuxtJS)</a>
+
+              <hr class="navbar-divider" />
+              <a class="navbar-item navbar-bold" href="https://jesusislord.uk">Shopping</a>
               <a class="navbar-item" href="https://jesusislord.uk">Jesus Is Lord Shopping Site (built by my daughter aged 11)</a>
+
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Node</a>
               <a class="navbar-item" href="  <li className = {styles.navigationItem}><a href='https://vue-js-demo.netlify.app'>VueJS with Bulma CSS</a></li>">VueJS with Bulma CSS (This site)</a>
@@ -65,13 +77,11 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="navbar-item" href="https://github.com/philanderson888/course-notes">Course Notes</a>
               <router-link class="navbar-item" to="/vuetutorials">Vue Tutorials</router-link>
             </div>
+            <hr class="navbar-divider" />
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
             <div class="navbar-dropdown">
-              <hr class="navbar-divider" />
-              <a class="navbar-item navbar-bold">Serverless Functions</a>
-              
+              <a class="navbar-item navbar-bold">Serverless</a>
               <a class="navbar-item" href="https://github.com/philanderson888/serverless-test">Serverless Functions On Netlify - GitHub Code - One I Built From Scratch</a>
               <a class="navbar-item" href="https://serverless-api-demo.netlify.app/.netlify/functions/api">Serverless Functions On Netlify - Live API Endpoint - One I Built From Scratch</a>
               <a class="navbar-item" href="https://github.com/philanderson888/netlify-express">Serverless Functions On Netlify - GitHub Code - Sample Cloned From The Internet</a>
@@ -82,15 +92,12 @@ import { RouterLink, RouterView } from "vue-router";
               <hr class="navbar-divider" />
             </div>
           </div>
-
-          <RouterLink class="navbar-item" to="/about2">About2</RouterLink>
-          <RouterLink class="navbar-item" to="/about">About</RouterLink>
-
-        </div>
-
-
-        
-
+          <div>
+            <RouterLink class="navbar-item" to="/about2">About2</RouterLink>
+            <RouterLink class="navbar-item" to="/about">About</RouterLink>  
+          </div>
+          <hr class="navbar-divider" />
+        </div>       
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
