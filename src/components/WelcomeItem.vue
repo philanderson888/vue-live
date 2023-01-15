@@ -7,15 +7,33 @@
       <h3>
         <slot name="heading"></slot>
       </h3>
+      <h3 class="bold">
+        <slot name="heading3"></slot>
+      </h3>
       <slot></slot>
     </div>
   </div>
 </template>
 
+<script lang="ts">
+
+export default {
+ setup2() {
+  const myNumber = 17;
+  return myNumber;
+ } 
+}
+
+</script>
+
 <style scoped>
 .item {
   margin-top: 2rem;
   display: flex;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 .details {

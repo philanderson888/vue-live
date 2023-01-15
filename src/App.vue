@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+
 </script>
 
 <template>
@@ -31,7 +32,7 @@ import { RouterLink, RouterView } from "vue-router";
 
           <RouterLink class="navbar-item navbar-bold" to="/">Home</RouterLink>
           <RouterLink class="navbar-item navbar-bold" to="/about3">About</RouterLink>
-          <RouterLink class="navbar-item navbar-bold" to="/viewtutorials">View Tutorials</RouterLink>
+          <RouterLink class="navbar-item navbar-bold" to="/vuetutorials">Vue Tutorials</RouterLink>
           <a class="navbar-item navbar-bold" href="https://philanderson.uk" >Blog</a>
           <RouterLink class="navbar-item navbar-bold" to="/helloWorld">Basic Features</RouterLink>
           
@@ -88,7 +89,7 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="navbar-item" href="https://netlify-express-serverless.netlify.app/.netlify/functions/server">Serverless Functions On Netlify - Live Site - Sample Cloned From The Internet</a>
               <hr class="navbar-divider" />
               <a class="navbar-item navbar-bold">Bulma CSS</a>
-              <router-link class="navbar-item" to="/bulmatestpage">Bulma Test Page</router-link>
+              <router-link class="navbar-item" to="/vuetutorials">Bulma Test Page</router-link>
               <hr class="navbar-divider" />
             </div>
           </div>
